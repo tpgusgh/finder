@@ -44,7 +44,7 @@ function save(){
     const regex = new RegExp(`(${text2})`, 'gi');
         localStorage.setItem('text1', text1);
         localStorage.setItem('text2', text2);
-        location.href='기록.html'
+        location.href='log.html'
 }
 
 function instagram(){
@@ -53,7 +53,7 @@ function instagram(){
 
 
 function money(){
-    window.open('돈.html');
+    window.open('money.html');
 }
 
 function rule(){
