@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인</title>
-    <style>
-        .input {
-  width: 50%;
-  max-width: 140px;
-  height: 5px;
-  padding: 12px;
-  border-radius: 12px;
-  border: 1.5px solid lightgrey;
-  outline: none;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-  box-shadow: 0px 0px 20px -18px;
-}
-    </style>
+    <title>파인더</title>
+    <link rel="stylesheet" href="fristpage.css">
 </head>
 <body>
-    <img style="top: 2%; position: absolute; right: 53%; width: 60px; height: 60px;" src="find.png"> <p style="text-align: center; font-size: 30px;">파인더</p>
+    <div class="box1">
+        <img style="top: 5%; position: absolute; right: 52%; width: 70px; height: 70px;" src="find.png"> <p class="finder">파인더</p>
         
-    <form onsubmit="event.preventDefault(); login();" style="text-align: center">
-        <label for="id">아이디:</label>
-        <input class="input" type="text" id="id" name="id" placeholder="아이디를 입력해주세요.." required><br><br>
-        <label for="password">비밀번호:</label>
-        <input class="input" type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요.." required><br><br>
-        <input type="submit" value="로그인" style="color: white; background-color: black;">
-    </form>
-    <script src="login.js"></script>
+        <div class="textbox1">
+            <p class="text1">‘배고파'라는곳에 밑줄 좀 그어줘</p>
+        </div>
+        <div class="textbox2">
+            <p class="text2">글이 너무 길어요</p>
+        </div>
+        <div class="textbox3">
+            <p class="text1">파인더라고 이거 한번 써봐</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <input type="button" value="사용해보기" class="button" onclick="location.href='login.html'">
 </body>
 </html>
